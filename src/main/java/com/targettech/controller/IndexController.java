@@ -11,7 +11,7 @@ public class IndexController {
 
     private final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String index() {
         return "ajax";
     }
