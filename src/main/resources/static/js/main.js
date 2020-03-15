@@ -16,8 +16,8 @@ $(document).ready(function () {
 function fire_ajax_submit() {
 
     var request = {}
-    var conversionType = $('#operations option:selected').val();
-    request["type"] = conversionType;
+    var calculateType = $('#operations option:selected').val();
+    request["type"] = calculateType;
     request["number1"] = $("#firstValue").val();
     request["number2"] = $("#secondValue").val();
     $("#btn-convert").prop("disabled", true);
@@ -34,7 +34,7 @@ function fire_ajax_submit() {
         timeout: 600000,
         success: function (data) {
 
-            var json = "<h4>Conversion Response</h4><pre>"
+            var json = "<h4>Calculate Response</h4><pre>"
                 + JSON.stringify(data, null, 4) + "</pre>";
             $('#feedback').html(json);
 

@@ -12,5 +12,4 @@ public class CalculatorWebAppApplication {
 	public static void main(String[] args)throws Exception {
 		SpringApplication.run(CalculatorWebAppApplication.class, args);
 	}
-
 }

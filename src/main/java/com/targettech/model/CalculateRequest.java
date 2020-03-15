@@ -4,11 +4,11 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class CalculateRequest {
-    @NotNull(message = "Values can't be empty!")
+    @NotNull(message = "Number1 can't be empty!")
     Double number1;
-    @NotNull(message = "Values can't be empty!")
+    @NotNull(message = "Number2 can't be empty!")
     Double number2;
-    @NotBlank(message = "Values can't be empty!")
+    @NotBlank(message = "Operations can't be empty!")
     String  operation;
 
     public double getNumber1() { return number1; }
